@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Session Tracking Experiment</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 760px;
+            background: white;
+            padding: 40px;
+            border-radius: 14px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin: 10px 0 30px;
+        }
+
+        .methods {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .method {
+            padding: 25px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #fafafa;
+            text-decoration: none;
+            color: #222;
+            transition: 0.2s;
+        }
+
+        .method:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+            background: #ffffff;
+        }
+
+        .number {
+            font-size: 13px;
+            color: #777;
+        }
+
+        .method h2 {
+            margin: 10px 0;
+        }
+
+        .method p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Session Tracking Experiment</h1>
+
+    <p class="subtitle">
+        Session Tracking Techniques in Java Servlets
+    </p>
+
+    <div class="methods">
+
+        <a class="method" href="CookieServlet">
+            <div class="number">METHOD 01</div>
+            <h2>Cookie Tracking</h2>
+            <p>
+                Store and retrieve username using browser cookies.
+            </p>
+        </a>
+
+        <a class="method" href="URLRewritingServlet">
+            <div class="number">METHOD 02</div>
+            <h2>URL Rewriting</h2>
+            <p>
+                Pass session information through the URL.
+            </p>
+        </a>
+
+        <a class="method" href="HiddenFormServlet">
+            <div class="number">METHOD 03</div>
+            <h2>Hidden Form Field</h2>
+            <p>
+                Transfer data using a hidden HTML form field.
+            </p>
+        </a>
+
+        <a class="method" href="HttpSessionServlet">
+            <div class="number">METHOD 04</div>
+            <h2>HttpSession</h2>
+            <p>
+                Maintain user information using a server-side session.
+            </p>
+        </a>
+
+    </div>
+
+    <div class="footer">
+        Ex.No.7 — Session Tracking in Servlets
+    </div>
+
+</div>
+
+</body>
+</html>
